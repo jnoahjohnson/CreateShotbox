@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 const CardStyles = styled.div`
   text-align: center;
@@ -32,8 +33,10 @@ const CardGridStyles = styled.div`
 const CardGrid = ({ cards }) => {
   return (
     <CardGridStyles>
-      {cards.map((card) => (
-        <Card card={card} />
+      {cards.map((card, index) => (
+        <Fade top delay={300 * index}>
+          <Card card={card} />
+        </Fade>
       ))}
     </CardGridStyles>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import Pulse from "react-reveal/Pulse";
 import styled from "styled-components";
 import Logo from "../images/ShotboxWhiteLogo.png";
 import Product from "../images/shotboxProduct.png";
@@ -60,6 +61,14 @@ const HeroStyles = styled.div`
     max-width: 1400px;
     margin: 0 auto;
   }
+
+  .amazing {
+    font-weight: 800;
+  }
+
+  .amazing > div {
+    display: inline;
+  }
 `;
 
 export const ContentStyles = styled.div`
@@ -76,8 +85,13 @@ const Hero = () => {
         <img src={Logo} alt="Shotbox" class="logo" />
         <div class="content">
           <h1 class="main-text">
-            Create <strong>amazing</strong> photos with the Shotbox
+            Create{" "}
+            <span className="amazing">
+              <Pulse cascade>amazing</Pulse>
+            </span>{" "}
+            photos with the Shotbox{" "}
           </h1>
+
           <button>Buy Now</button>
         </div>
         <img src={Product} alt="Shotbox Product" class="product-image" />
