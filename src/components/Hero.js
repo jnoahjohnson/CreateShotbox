@@ -15,6 +15,9 @@ const HeroStyles = styled.div`
   color: white;
 
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 
   .logo {
     position: absolute;
@@ -25,7 +28,7 @@ const HeroStyles = styled.div`
   }
 
   .product-image {
-    margin-top: 60px;
+    margin-top: 175px;
   }
 
   .main-text {
@@ -50,7 +53,7 @@ const HeroStyles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 90px;
+    margin-bottom: 0px;
   }
 
   .hero-content-container {
@@ -68,6 +71,54 @@ const HeroStyles = styled.div`
 
   .amazing > div {
     display: inline;
+  }
+
+  @media (max-width: 1200px) {
+    .content {
+      flex-grow: 2;
+      margin-bottom: 0;
+    }
+
+    .product-image {
+      flex-grow: 1;
+      width: 100%;
+      margin-top: 80px;
+    }
+
+    height: 500px;
+  }
+
+  @media (max-width: 850px) {
+    height: auto;
+    padding-bottom: 0;
+
+    .hero-content-container {
+      padding-top: 65px;
+      flex-direction: column;
+    }
+
+    .product-image {
+      max-width: 90%;
+      width: 400px;
+      margin: 0;
+      margin-left: 40%;
+      margin-top: -100px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .content {
+      text-align: center;
+      align-items: center;
+    }
+
+    .main-text {
+      font-size: 2.5rem;
+    }
+
+    .product-image {
+      margin: 0;
+    }
   }
 `;
 

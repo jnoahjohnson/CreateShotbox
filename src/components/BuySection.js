@@ -17,6 +17,14 @@ const BuyStyles = styled.div`
   img {
     border-radius: 10px;
   }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 490px) {
+    padding: 0.5rem;
+  }
 `;
 
 const ContentStyles = styled.div`
@@ -63,6 +71,32 @@ const ContentStyles = styled.div`
     width: 330px;
     text-align: center;
   }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: -20px;
+    .sale {
+      right: -10px;
+    }
+  }
+
+  @media (max-width: 490px) {
+    .sale {
+      font-size: 1.75rem;
+      padding: 0.25rem;
+      width: auto;
+      right: 0;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .sale {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const PriceSection = styled.div`
@@ -70,6 +104,10 @@ const PriceSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 490px) {
+    padding-top: 0;
+  }
 `;
 
 const DescriptionSection = styled.div`

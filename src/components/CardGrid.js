@@ -10,6 +10,18 @@ const CardStyles = styled.div`
     font-weight: bold;
     font-size: 2rem;
   }
+
+  @media (max-width: 860px) {
+    p {
+      font-size: 1.5rem;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 const Card = ({ card }) => {
@@ -28,6 +40,14 @@ const CardGridStyles = styled.div`
   grid-template-columns: 350px 350px 350px;
   gap: 50px;
   justify-content: center;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const CardGrid = ({ cards }) => {

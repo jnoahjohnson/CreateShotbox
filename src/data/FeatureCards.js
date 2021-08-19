@@ -21,7 +21,7 @@ export const CardData = [
     image: <LightingImage />,
   },
   {
-    title: "Unique Backgrounds",
+    title: "Unique Images",
     text: "The Shotbox includes a variety of prints along with solid backdrops so that you can setup any scene you can imagine.",
     image: <BackgroundsImage />,
   },

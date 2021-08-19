@@ -21,6 +21,14 @@ const BlueHeader = styled.h1`
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
+
+  @media (max-width: 900px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 const TwoColumn = styled.div`
@@ -29,6 +37,10 @@ const TwoColumn = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const TestimonialBlock = styled.p`
@@ -39,6 +51,12 @@ const TestimonialBlock = styled.p`
   box-shadow: var(--defaultShadow);
   border-radius: 10px;
   text-align: center;
+
+  @media (max-width: 560px) {
+    font-size: 1.5rem;
+  }
+
+  margin-bottom: 25px;
 `;
 
 const FooterSection = styled.div`
@@ -68,6 +86,7 @@ const IndexPage = () => {
             src="../images/PhotoImage.png"
             alt="Woman taking picture of jewlery"
             placeholder="blurred"
+            width={1000}
           />
         </ImageStyles>
       </Fade>
@@ -110,6 +129,7 @@ const IndexPage = () => {
                 src="../images/tablePicture.png"
                 alt="Man taking picture of drawing"
                 placeholder="blurred"
+                width={800}
               />
             </ImageStyles>
           </Fade>
@@ -122,7 +142,9 @@ const IndexPage = () => {
             </TestimonialBlock>
           </Fade>
         </TwoColumn>
-
+        <BlueHeader>
+          <Fade top>The Possibilities Are Endless</Fade>
+        </BlueHeader>
         <ExamplesSection />
         <BlueHeader>Ready to create something amazing?</BlueHeader>
         <Spacer />

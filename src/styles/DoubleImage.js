@@ -9,6 +9,15 @@ const DoubleImage = styled.div`
   img {
     border-radius: 10px;
   }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: 460px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default DoubleImage;
