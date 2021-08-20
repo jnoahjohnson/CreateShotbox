@@ -10,7 +10,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "G-6FRCCM3PXB",
+        trackingId: "6FRCCM3PXB",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-6FRCCM3PXB"],
       },
     },
     "gatsby-plugin-sharp",
