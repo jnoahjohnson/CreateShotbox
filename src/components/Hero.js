@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Pulse from "react-reveal/Pulse";
 import styled from "styled-components";
 import Logo from "../images/ShotboxWhiteLogo.png";
@@ -142,8 +143,9 @@ const Hero = () => {
             </span>{" "}
             photos with the Shotbox{" "}
           </h1>
-
-          <button>Buy Now</button>
+          <AnchorLink href="#BuySection">
+            <button>Buy Now</button>
+          </AnchorLink>
         </div>
         <img src={Product} alt="Shotbox Product" class="product-image" />
       </div>

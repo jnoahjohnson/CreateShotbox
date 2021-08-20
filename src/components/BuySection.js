@@ -31,7 +31,7 @@ const ContentStyles = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
 
   button {
@@ -103,7 +103,11 @@ const PriceSection = styled.div`
   padding-top: 1.75rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+
+  h1 {
+    margin-bottom: -25px;
+  }
 
   @media (max-width: 490px) {
     padding-top: 0;
@@ -118,14 +122,14 @@ const DescriptionSection = styled.div`
 
 export default function BuySection() {
   return (
-    <BuyStyles>
+    <BuyStyles id="BuySection">
       <StaticImage src="../images/buy-product.jpg" alt="Woman using Shotbox" />
       <ContentStyles>
         <PriceSection>
           <h1>
             <span className="currency">$</span>164
           </h1>
-          <button>Buy Now</button>
+          <div id="product-component-1629479374550"></div>
         </PriceSection>
         <DescriptionSection>
           <p>
